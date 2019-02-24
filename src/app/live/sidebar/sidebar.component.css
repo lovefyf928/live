@@ -1,0 +1,130 @@
+.sidebar-main{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  background-color: #1D1B24;
+  width: 23.9rem;
+  height: 100%;
+}
+.sign-up{
+  background-color: #2c2541;
+  margin: 1rem;
+  padding: 2rem 1rem;
+  width: 29rem;
+  height: 30rem;
+}
+.sign-up-bg-img{
+  width: 19.9rem;
+  height: 9.68rem;
+}
+.sign-up-profile-img{
+  width: 4rem;
+  height: 4rem;
+  border-radius: 0.4rem;
+
+}
+.sign-up-header{
+  position: relative;
+}
+.sign-up-profile{
+  position: absolute;
+  top: 2.84rem;
+  left: 7.9rem;
+}
+.sign-up-con{
+  text-align: center;
+  margin: 1rem 0;
+
+}
+.sign-up-p{
+  margin: 0;
+  margin-bottom: 1.4rem;
+  color: #dad8de;
+  font-size: 1.6rem;
+}
+.sign-up-option{
+  display: flex;
+  flex-direction: row;
+  color: #898395;
+  fill: #898395;
+  line-height: 1.9rem;
+}
+.sign-up-option-p{
+  margin: 0;
+  margin-left: 1rem;
+  font-size: 1.2rem;
+}
+.btnc{
+  margin: 0;
+  margin-left: 6.14rem;
+  color: #dad8de;
+  width: 8rem;
+  height: 2.8rem;
+  background-color: #6441a4;
+  line-height: 0;
+}
+.btnc:hover{
+  color: #dad8de;
+  background-color: #7d5bbe;
+}
+.btn-span{
+  font-size: 1.2rem;
+}
+.fp{
+  color: #b8b5c0;
+}
+.fdiv{
+  width: 100%;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding-top: 1rem;
+  border-bottom: 1px solid #2c243f;
+}
+.itemdtl{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 1rem;
+}
+.itemimg{
+  width: 3rem;
+  height: 3rem;
+}
+.fitem{
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+}
+.itemp{
+  color: #b8b5c0;
+  font-size: 1.4rem;
+  margin: 0;
+}
+.itemspan{
+  color: #b8b5c0;
+  font-size: 1.2rem;
+}
+.itemdiv:hover{
+  background-color: #0e0c15;
+}
+.itemdiv{
+  padding: 0.5rem 1rem;
+  position: relative;
+}
+.itembtn{
+  position: absolute;
+  right: -4.7rem;
+  top: 1.5rem;
+  width: 4.8rem;
+  height: 2.2rem;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  color: #fff;
+  background-color: #6441a4;
+  border: 0;
+  border-radius: 3px;
+  display: none;
+}
+.itemdiv:hover .itembtn{
+  display: block;
+  right: 1rem;
+}

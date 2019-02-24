@@ -1,0 +1,135 @@
+<div id="bg">
+  <div id="cent">
+    <div id="video">
+      <video id="main-video" width=659 height=371.25 class="video-js vjs-default-skin" data-setup='{"autoplay": true}' controls>
+      </video>
+    </div>
+    <div id="dtl">
+      <div id="dip">
+        <div class="dtlimg">
+          <img [src]="data2.Headportrait" width="40" height="40">
+        </div>
+        <div class="smdtl">
+          <p class="pbj" style="display: inline-block">{{data2.Liveanchor}}</p>
+          <span style="display: block">
+                        playing <a href="#" class="gameclass">{{data2.gameclass}}</a>
+                    </span>
+        </div>
+      </div>
+      <div class="enterlive">
+        <a routerLink="/live" href="#" data-lid="1" class="cl">{{data2.title}}</a>
+      </div>
+      <div class="moredtl">
+        <p style="font-size: 12px">{{data2.detail}}</p>
+      </div>
+    </div>
+    <div class="tj">
+      <div class="leftjt">
+        <button [ngClass]="obj" (click)="f1()">
+                        <span>
+                            <svg class="jt" width="20" height="20" version="1.1" viewBox="0 0 20 20" x="0" y="0">
+                                <path d="M13.707 16.707a1.005 1.005 0 0 0 0-1.42l-5.285-5.286 5.285-5.287a1.007 1.007 0 0 0 0-1.42.996.996 0 0 0-.71-.294.994.994 0 0 0-.71.295L6.295 9.29a1.003 1.003 0 0 0 0 1.42l5.994 5.996a1.003 1.003 0 0 0 1.419 0" fill-rule="evenodd"></path>
+                            </svg>
+                        </span>
+        </button>
+      </div>
+      <div class="{{isa==1?'acitm':'disitm'}}" *ngIf="display" (click)="getdata(1);isac(1)">
+        <div class="ct">
+          <div class="ac">
+            <img class="{{isa==1?'acdhimg':'disimg'}}" [src]="banner.msg[0].banner"  alt="">
+            <div class="ppcount">
+              <div class="co"></div>
+              <span class="countnm">{{banner.msg[0].people}}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="{{isa==2?'acitm':'disitm'}}" *ngIf="display" (click)="getdata(2);isac(2)">
+        <div class="ct">
+          <div class="bs">
+            <img class="{{isa==2?'acdhimg':'disimg'}}" [src]="banner.msg[1].banner">
+            <div class="ppcount">
+              <div class="co"></div>
+              <span class="countnm">{{banner.msg[1].people}}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="{{isa==3?'acitm':'disitm'}}" (click)="getdata(3);isac(3)">
+        <div class="ct">
+          <div class="bs">
+            <img class="{{isa==3?'acdhimg':'disimg'}}" [src]="banner.msg[2].banner">
+            <div class="ppcount">
+              <div class="co"></div>
+              <span class="countnm">{{banner.msg[2].people}}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="{{isa==4?'acitm':'disitm'}}" (click)="getdata(4);isac(4)">
+        <div class="ct">
+          <div class="bs">
+            <img class="{{isa==4?'acdhimg':'disimg'}}" [src]="banner.msg[3].banner">
+            <div class="ppcount">
+              <div class="co"></div>
+              <span class="countnm">{{banner.msg[3].people}}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="{{isa==5?'acitm':'disitm'}}" (click)="getdata(5);isac(5)">
+        <div class="ct">
+          <div class="bs">
+            <img class="{{isa==5?'acdhimg':'disimg'}}" [src]="banner.msg[4].banner">
+            <div class="ppcount">
+              <div class="co"></div>
+              <span class="countnm">{{banner.msg[4].people}}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="{{isa==6?'acitm':'disitm'}}" (click)="getdata(6);isac(6)">
+        <div class="ct">
+          <div class="bs">
+            <img class="{{isa==6?'acdhimg':'disimg'}}" [src]="banner.msg[5].banner">
+            <div class="ppcount">
+              <div class="co"></div>
+              <span class="countnm">{{banner.msg[5].people}}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="{{isa==7?'acitm':'disitm'}}" *ngIf="display2" (click)="getdata(7);isac(7)">
+        <div class="ct">
+          <div class="bs">
+            <img class="{{isa==7?'acdhimg':'disimg'}}" [src]="banner.msg[6].banner">
+            <div class="ppcount">
+              <div class="co"></div>
+              <span class="countnm">{{banner.msg[6].people}}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="{{isa==8?'acitm':'disitm'}}" *ngIf="display2" (click)="getdata(8);isac(8)">
+        <div class="ct">
+          <div class="bs">
+            <img class="{{isa==8?'acdhimg':'disimg'}}" [src]="banner.msg[7].banner">
+            <div class="ppcount">
+              <div class="co"></div>
+              <span class="countnm">{{banner.msg[7].people}}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="rightjt">
+        <button [ngClass]="obj2" (click)="f2()">
+                        <span>
+                            <svg class="jt" width="20" height="20" version="1.1" viewBox="0 0 20 20" x="0" y="0">
+                                <path d="M6.293 3.294a1.006 1.006 0 0 0 0 1.42L11.578 10l-5.285 5.287a1.007 1.007 0 0 0 0 1.42c.19.19.442.294.71.294a.99.99 0 0 0 .708-.295l5.995-5.996a1.003 1.003 0 0 0 0-1.42L7.711 3.294a1.002 1.002 0 0 0-1.418 0" fill-rule="evenodd"></path>
+                            </svg>
+                        </span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

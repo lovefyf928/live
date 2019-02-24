@@ -1,0 +1,9 @@
+.btnc{
+  background-color: #6441a4;
+  color: #fff;
+  font-size: 1.2rem;
+}
+.btnc:hover{
+  color: #fff;
+  background-color: #7d5bbe;
+}

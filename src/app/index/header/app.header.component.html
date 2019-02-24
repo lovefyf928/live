@@ -1,0 +1,89 @@
+<div>
+  <div id="main">
+    <div id="header">
+      <div class="top-nav">
+        <a routerLink="" class="logo" href="index.html">
+          <svg class="coin" width="30px" height="30px" version="1.1" viewBox="0 0 30 30" x="0px" y="0px">
+            <path d="M21,9h-2v6h2V9z M5.568,3L4,7v17h5v3h3.886L16,24h5l6-6V3H5.568z M25,16l-4,4h-6l-3,3v-3H8V5h17V16z M16,9h-2v6h2V9z" fill-rule="evenodd"></path>
+          </svg>
+        </a>
+        <div class="top-nav-c">
+          <ul class="nav" style="width: 400px">
+            <li>
+              <a href="#">浏览</a>
+            </li>
+            <li>
+              <a href="#">获取桌面应用</a>
+            </li>
+            <li>
+              <a href="#">快来试试Prime吧!</a>
+            </li>
+            <li>
+              <a href="#">商店</a>
+            </li>
+          </ul>
+          <ul class="nav ad">
+            <li id="ddd">
+                        <span id="xs">
+                        <svg class="coin dd" width="20px" height="20px" version="1.1" viewBox="0 0 20 20" x="0px" y="0px">
+                            <path d="M4 8a2 2 0 1 1 0 4 2 2 0 0 1 0-4zm6 0a2 2 0 1 1 0 4 2 2 0 0 1 0-4zm6 0a2 2 0 1 1 0 4 2 2 0 0 1 0-4z" fill-rule="evenodd"></path>
+                        </svg>
+                        </span>
+            </li>
+            <li id="sq">
+              <div id="fdjdiv">
+                <svg class="coin fdj" width="20px" height="20px" version="1.1" viewBox="0 0 20 20" x="0px" y="0px" style="fill: #616779;">
+                  <path d="M4.16 8.552a4.397 4.397 0 0 1 4.392-4.393 4.397 4.397 0 0 1 4.391 4.393 4.396 4.396 0 0 1-4.39 4.392 4.397 4.397 0 0 1-4.394-4.392m13.546 7.732l-3.872-3.873a6.51 6.51 0 0 0 1.27-3.86A6.558 6.558 0 0 0 8.552 2 6.56 6.56 0 0 0 2 8.552a6.559 6.559 0 0 0 6.552 6.55 6.51 6.51 0 0 0 3.86-1.27l3.872 3.873a.994.994 0 0 0 .711.295 1.006 1.006 0 0 0 .71-1.716" fill-rule="evenodd"></path>
+                </svg>
+              </div>
+              <input class="input" placeholder="搜索" type="text" id="serc" style="color: #000">
+            </li>
+          </ul>
+          <ul class="nav ri">
+            <li>
+              <div id="king">
+                <div>
+                  <svg class="coin" width="20px" height="20px" version="1.1" viewBox="0 0 20 20" x="0px" y="0px">
+                    <path d="M15 10l-5-5-5 5-4-3.711V15a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V6.289L15 10z" fill-rule="evenodd"></path>
+                  </svg>
+                </div>
+                <div>
+                  <span class="msg">11</span>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div id="dw">
+                <button class="btn">
+                            <span>
+                                <svg class="coin jt" width="20px" height="20px" version="1.1" viewBox="0 0 20 20" x="0px" y="0px">
+                                    <path d="M9.592 9.081L3 11.802l6.122-9.336A1.05 1.05 0 0 1 10 2c.357 0 .688.176.878.466L17 11.802l-6.592-2.72a1.077 1.077 0 0 0-.816 0zM10 11l6 2.638-5.407 4.16a.973.973 0 0 1-1.186 0L4 13.638 10 11z" fill-rule="evenodd"></path>
+                                </svg>
+                            </span>
+                  <span class="font">获得呼币</span>
+                  <span class="xjt">
+                                <svg class="coin" width="20px" height="20px" version="1.1" viewBox="0 0 20 20" x="0" y="0">
+                                    <path d="M5.054 7.463A.714.714 0 0 1 5.714 7h8.572c.289 0 .55.183.66.463.11.28.05.603-.155.817l-4.286 4.5A.696.696 0 0 1 10 13a.696.696 0 0 1-.505-.22L5.21 8.28a.777.777 0 0 1-.155-.817"></path>
+                                </svg>
+                            </span>
+                </button>
+              </div>
+            </li>
+            <li *ngIf="!name">
+              <button class="btn1 login" (click)="login()">登录</button>
+            </li>
+            <li *ngIf="!name">
+              <button class="btn1 l">注册</button>
+            </li>
+            <li *ngIf="name">
+              <h4>欢迎回来{{name}}</h4>
+            </li>
+            <li *ngIf="name">
+              <button class="btn1 l" (click)="logout()">注销</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

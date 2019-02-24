@@ -1,0 +1,29 @@
+<div class="tjgamebg">
+  <div class="tjgame">
+    <div class="divht1">
+      <p class="ht1">Featured Games</p>
+      <div class="divht2">
+        <p class="ht2">Games people are watching now</p>
+      </div>
+    </div>
+  </div>
+  <div class="bigdiv1">
+    <div class="item" *ngFor="let item of msg">
+      <a href="#" class="gamea">
+        <img class="maingameimg" [src]="item.url">
+        <h3 class="titl" title="Fortnite">{{item.title}}</h3>
+        <p class="pep">{{item.viewers}} viewers</p>
+      </a>
+    </div>
+  </div>
+  <div class="tjend">
+    <a href="#" class="enda">
+      <p class="endp">See all live games</p>
+      <div class="hah">
+        <svg class="endsvg" width="14" height="18" version="1.1" x="0" y="0">
+          <path d="M6.293 3.294a1.006 1.006 0 0 0 0 1.42L11.578 10l-5.285 5.287a1.007 1.007 0 0 0 0 1.42c.19.19.442.294.71.294a.99.99 0 0 0 .708-.295l5.995-5.996a1.003 1.003 0 0 0 0-1.42L7.711 3.294a1.002 1.002 0 0 0-1.418 0" fill-rule="evenodd"></path>
+        </svg>
+      </div>
+    </a>
+  </div>
+</div>
